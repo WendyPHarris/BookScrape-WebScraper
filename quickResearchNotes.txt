@@ -1,0 +1,28 @@
+what is a parser?
+a parser reads the HTML content of a webpage and breaks it down into a structured format. Think of it as transforming a giant, unstructured text file into something more organized that you can work with—like a tree structure where you can access different parts of the HTML.
+
+------------------------
+
+how to find what elements are wrapped in and what class they belong to in HTML
+Open Developer Tools:
+
+Go to the website you’re scraping, Books to Scrape.
+Right-click on any part of the page, and select Inspect (or Inspect Element in some browsers). This will open the developer tools, typically showing the HTML of the page.
+Locate a Book Element on the Page:
+
+Scroll to a book on the page and hover over it with your mouse in the Elements tab of developer tools. You should see the corresponding HTML highlighted.
+Click on the book title or any part of the book block to focus on its HTML structure.
+Expand HTML Elements:
+
+Once you’ve clicked on a part of the book, you may need to expand elements by clicking on the small triangles (or arrows) next to them. This reveals nested elements inside, allowing you to see more details.
+Identify the Author and Rating:
+
+Look at each part of the book’s HTML structure to locate the author and rating. You can usually identify them based on what they display or by exploring <p>, <span>, <div>, or similar tags.
+Once you’ve found the author and rating, notice if they have specific classes (like class="author" or class="star-rating") or if they’re wrapped in specific tags (e.g., <p> or <span>). These classes and tags are what you’ll use to select these elements in your code.
+Confirm Consistency:
+
+To ensure your scraper works for all books, scroll through several books on the page and check if the author and rating are consistently wrapped in the same tag and class for each book.
+If they are consistent, you can confidently use that tag and class in your code to extract the author and rating for each book.
+Copy Selector (Optional):
+
+Once you find the element, you can right-click on it in the developer tools, select Copy, and then Copy selector or Copy XPath. This can give you a path to the element, but you might still want to adjust it to make it more general if it includes specific IDs that are unique to each book.
